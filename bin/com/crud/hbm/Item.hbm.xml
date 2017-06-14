@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-5.0.dtd">
+
+<hibernate-mapping>
+	<class name="Item" table="Item">
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="name" type="string" column="name" />
+		<property name="description" type="string" column="description" />
+		<property name="imageUrl" type="string" column="image_url" />
+	</class>
+
+</hibernate-mapping>
