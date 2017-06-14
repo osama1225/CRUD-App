@@ -2,9 +2,11 @@ package com.crud.daos;
 
 import java.util.List;
 
-import com.crud.hibernate.beans.Item;
+import com.crud.hibernate.models.ItemModel;
 
 public interface ItemDao {
 
-	List<Item> getAllItems();
+	List<ItemModel> getAllItems();
+
+	ItemModel getItemById(int id);
 }

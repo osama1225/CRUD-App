@@ -9,5 +9,8 @@
 
 	<bean id="itemDao" class="com.crud.daos.impl.ItemDaoImpl" />
 	<bean id="itemService" class="com.crud.services.impl.ItemServiceImpl"/>
+	
+	<bean id="itemPopulator" class="com.crud.populators.impl.ItemPopulatorImpl"/>
+	<bean id="itemFacade" class="com.crud.facades.impl.ItemFacadeImpl"/>
 
 </beans>

@@ -1,16 +1,16 @@
-package com.crud.hibernate.beans;
+package com.crud.hibernate.models;
 
-public class Item {
+public class ItemModel {
 
 	private int id;
 	private String name;
 	private String description;
 	private String imageUrl;
 
-	public Item() {
+	public ItemModel() {
 	}
 
-	public Item(String name, String description, String imageUrl) {
+	public ItemModel(String name, String description, String imageUrl) {
 		this.name = name;
 		this.description = description;
 		this.imageUrl = imageUrl;
