@@ -8,6 +8,8 @@ public interface ItemFacade {
 
 	List<ItemDTO> getAllItems();
 	
+	List<ItemDTO> getPaginatedItems(int pageNumber);
+	
 	ItemDTO getItemById(int id);
 	
 }

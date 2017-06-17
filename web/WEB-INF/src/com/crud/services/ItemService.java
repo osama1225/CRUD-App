@@ -8,6 +8,8 @@ public interface ItemService {
 
 	List<ItemModel> getAllItems();
 	
+	List<ItemModel> getPaginatedItems(int pageNumber);
+	
 	ItemModel getItemById(int id);
 	
 }

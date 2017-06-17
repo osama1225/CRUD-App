@@ -26,6 +26,13 @@ public class ItemFacadeImpl implements ItemFacade {
 	}
 
 	@Override
+	public List<ItemDTO> getPaginatedItems(int pageNumber) {
+		List<ItemModel> paginatedItemModels = itemService.getPaginatedItems(pageNumber);
+		List<ItemDTO> paginatedItemDTOs = itemPopulator.populateAll(paginatedItemModels);
+		return paginatedItemDTOs;
+	}
+
+	@Override
 	public ItemDTO getItemById(int id) {
 		ItemModel itemModel = itemService.getItemById(id);
 		ItemDTO itemDTO = itemPopulator.populate(itemModel);

@@ -6,6 +6,7 @@ import javax.annotation.Resource;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.crud.dtos.ItemDTO;
@@ -18,9 +19,14 @@ public class ItemRestController {
 	@Resource
 	private ItemFacade itemFacade;
 
-	@RequestMapping("list-items")
-	public List<ItemDTO> listItems() {
+	@RequestMapping("all")
+	public List<ItemDTO> listAllItems() {
 		return itemFacade.getAllItems();
+	}
+	
+	@RequestMapping("items")
+	public List<ItemDTO> listPaginatedItems(@RequestParam(name = "page") final int pageNumber) {
+		return itemFacade.getPaginatedItems(pageNumber);
 	}
 	
 	@RequestMapping("item/{itemId}")
@@ -28,6 +34,4 @@ public class ItemRestController {
 		return itemFacade.getItemById(itemId);
 	}
 	
-	
-
 }
