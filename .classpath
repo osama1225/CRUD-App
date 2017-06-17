@@ -26,7 +26,7 @@
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-context-support-4.2.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-core-4.2.4.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-core-4.2.4.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" sourcepath="C:/Users/Mohamed/AppData/Local/Temp/decompiler/source/spring-core-4.2.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" sourcepath="C:/Users/Mohamed/AppData/Local/Temp/decompiler/source/spring-core-4.2.4.RELEASE-sources-1497474514904.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-expression-4.2.4.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-expression-4.2.4.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-expression-4.2.4.RELEASE.jar"/>
@@ -59,10 +59,10 @@
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-web-4.2.4.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-web-4.2.4.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" sourcepath="C:/Users/Mohamed/AppData/Local/Temp/decompiler/source/spring-web-4.2.4.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar" sourcepath="C:/Users/Mohamed/AppData/Local/Temp/decompiler/source/spring-web-4.2.4.RELEASE-sources-1497703214913.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-4.2.4.RELEASE.jar" sourcepath="C:/Users/Mohamed/AppData/Local/Temp/decompiler/source/spring-webmvc-4.2.4.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-portlet-4.2.4.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-portlet-4.2.4.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-portlet-4.2.4.RELEASE.jar"/>
@@ -85,5 +85,8 @@
 	<classpathentry kind="lib" path="web/WEB-INF/lib/jandex-2.0.3.Final.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/javassist-3.20.0-GA.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/mysql-connector-java-5.1.42-bin.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/com.fasterxml.jackson.core.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/com.fasterxml.jackson.databind.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/com.fasterxml.jackson.annotations.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
