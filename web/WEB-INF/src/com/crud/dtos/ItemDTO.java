@@ -13,6 +13,13 @@ public class ItemDTO {
 	private String name;
 	private String description;
 	private String imageUrl;
+	
+	public ItemDTO() {
+		id = -1;
+		name = null;
+		description = null;
+		imageUrl = null;
+	}
 
 	public int getId() {
 		return id;

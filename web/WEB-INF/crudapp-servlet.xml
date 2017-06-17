@@ -11,6 +11,7 @@
        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 	
  	<context:component-scan base-package="com.crud.controllers" />
+ 	<context:component-scan base-package="com.crud.webservices.controllers" />
 	<mvc:annotation-driven />
 	<context:annotation-config/> 
  
