@@ -2,7 +2,7 @@
 A template Java CRUD app that provides CRUD operations for items stored in a DB either via direct access from browser or via web service calls.
 
 ## App info:
-- This project uses Spring MVC as the web development framework(v4) along with Hibernate(v4) for accessing the data stored in MYSQL database.
+- This project uses Spring MVC as the web development framework(V4.3.0) along with Hibernate(V5) for accessing the data stored in MYSQL database.
 - It uses Ant to generate the .classes files and to deploy it into apache tomcate.
 - Two properties files are provided, global-config.properties and local-cofing.properties. The local-config.properties file overrides the global-config.properties file.
   - The idea is to define all the keys in global-config file, and provide your custom values in local-config file.
