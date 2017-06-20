@@ -39,4 +39,9 @@ public class ItemFacadeImpl implements ItemFacade {
 		return itemDTO;
 	}
 
+	@Override
+	public boolean deleteItem(int itemId) {
+		return itemService.deleteItemById(itemId);
+	}
+
 }

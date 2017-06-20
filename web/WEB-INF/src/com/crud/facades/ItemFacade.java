@@ -11,5 +11,7 @@ public interface ItemFacade {
 	List<ItemDTO> getPaginatedItems(int pageNumber);
 	
 	ItemDTO getItemById(int id);
+
+	boolean deleteItem(int itemId);
 	
 }

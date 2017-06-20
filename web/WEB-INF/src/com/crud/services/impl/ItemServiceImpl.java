@@ -6,6 +6,7 @@ import javax.annotation.Resource;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.dao.DataAccessException;
 import org.springframework.util.StringUtils;
 
 import com.crud.daos.ItemDao;
@@ -61,6 +62,18 @@ public class ItemServiceImpl implements ItemService, InitializingBean {
 		if (itemDao == null) {
 			throw new Exception("itemDao not set");
 		}
+	}
+
+	@Override
+	public boolean deleteItemById(int itemId) {
+		if (itemId > 0) {
+			try {
+				return itemDao.deleteItemById(itemId);
+			} catch (DataAccessException e) {
+				return false;
+			}
+		}
+		return false;
 	}
 
 }

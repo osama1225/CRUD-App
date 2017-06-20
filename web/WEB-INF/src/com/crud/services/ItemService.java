@@ -11,5 +11,7 @@ public interface ItemService {
 	List<ItemModel> getPaginatedItems(int pageNumber);
 	
 	ItemModel getItemById(int id);
+
+	boolean deleteItemById(int itemId);
 	
 }

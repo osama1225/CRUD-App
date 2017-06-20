@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans  
-        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
 		<property name="driverClassName" value="${db.driver}" />
@@ -12,7 +12,7 @@
 	</bean>
 
 	<bean id="sessionFactoryBean"
-		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="mappingLocations" value="/**/*.hbm.xml"/>
 
@@ -25,7 +25,11 @@
 		</property>
 	</bean>
 
-	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">
 		<property name="sessionFactory" ref="sessionFactoryBean" />
 	</bean>
+	
+	<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager"> 
+    	<property name="sessionFactory" ref="sessionFactoryBean" /> 
+	</bean> 
 </beans>

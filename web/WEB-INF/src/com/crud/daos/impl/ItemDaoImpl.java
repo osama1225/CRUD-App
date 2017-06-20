@@ -3,9 +3,11 @@ package com.crud.daos.impl;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.transaction.Transactional;
 
 import org.hibernate.criterion.DetachedCriteria;
-import org.springframework.orm.hibernate4.HibernateTemplate;
+import org.springframework.dao.DataAccessException;
+import org.springframework.orm.hibernate5.HibernateTemplate;
 
 import com.crud.daos.ItemDao;
 import com.crud.hibernate.models.ItemModel;
@@ -32,5 +34,14 @@ public class ItemDaoImpl implements ItemDao {
 		return hibernateTemplate.get(ItemModel.class, id);
 	}
 
+	@Override
+	public boolean deleteItemById(int itemId) throws DataAccessException {
+		ItemModel toBeDeleted = getItemById(itemId);
+		if (toBeDeleted != null) {
+			hibernateTemplate.delete(toBeDeleted);
+			return true;
+		}
+		return false;
+	}
 
 }
