@@ -78,7 +78,7 @@
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-web-4.3.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-4.3.0.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-4.3.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-4.3.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-4.3.0.RELEASE.jar" sourcepath="C:/Users/Mohamed/AppData/Local/Temp/decompiler/source/spring-webmvc-4.3.0.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-portlet-4.3.0.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-portlet-4.3.0.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="web/WEB-INF/lib/spring-webmvc-portlet-4.3.0.RELEASE.jar"/>
