@@ -17,4 +17,21 @@ $(document).ready(function() {
 		    }
 		});
 	});
+	
+	$(".editBtn").on("click", function(){
+		window.location = $(this).attr("data-url");
+	});
+	
+	$(".backBtn").on("click", function(){
+		window.location = $(this).attr("data-url");
+	});
+	
+	showUpdatedMessageIfExist();
 });
+
+function showUpdatedMessageIfExist(){
+	var updated = $("input[name='updated']").val();
+	if (updated.length > 0){
+		$("#updatedDiv").css("disaply","block").fadeIn(2000).fadeOut(3000);
+	}
+}

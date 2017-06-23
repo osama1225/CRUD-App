@@ -18,5 +18,9 @@ public interface ItemDao {
 
 	@Transactional(propagation = Propagation.REQUIRED, readOnly = false, timeout = -1)
 	boolean deleteItemById(int itemId) throws DataAccessException;
+	
+	@Transactional(propagation = Propagation.REQUIRED, readOnly = false, timeout = -1)
+	boolean insertOrUpdateItem(ItemModel item) throws DataAccessException;
+	
 
 }

@@ -44,4 +44,10 @@ public class ItemDaoImpl implements ItemDao {
 		return false;
 	}
 
+	@Override
+	public boolean insertOrUpdateItem(ItemModel item) throws DataAccessException {
+		hibernateTemplate.saveOrUpdate(item);
+		return true;
+	}
+
 }

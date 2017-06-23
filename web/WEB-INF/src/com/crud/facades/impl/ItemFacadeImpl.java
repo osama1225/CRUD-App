@@ -44,4 +44,10 @@ public class ItemFacadeImpl implements ItemFacade {
 		return itemService.deleteItemById(itemId);
 	}
 
+	@Override
+	public boolean AddOrUpdateItem(ItemDTO itemDTO) {
+		ItemModel itemModel = itemPopulator.convertToModel(itemDTO);
+		return itemService.addOrUpdateItem(itemModel);
+	}
+
 }

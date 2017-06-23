@@ -36,4 +36,17 @@ public class ItemPopulatorImpl implements ItemPopulator {
 		return result;
 	}
 
+	@Override
+	public ItemModel convertToModel(ItemDTO itemDTO) {
+		if (itemDTO == null){
+			return null;
+		}
+		ItemModel itemModel = new ItemModel();
+		itemModel.setId(itemDTO.getId());
+		itemModel.setName(itemDTO.getName());
+		itemModel.setDescription(itemDTO.getDescription());
+		itemModel.setImageUrl(itemDTO.getImageUrl());
+		return itemModel;
+	}
+
 }

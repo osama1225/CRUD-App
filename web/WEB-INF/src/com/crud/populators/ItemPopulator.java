@@ -11,4 +11,6 @@ public interface ItemPopulator {
 	
 	public List<ItemDTO> populateAll(List<ItemModel> itemModels);
 	
+	public ItemModel convertToModel(ItemDTO itemDTO);
+	
 }

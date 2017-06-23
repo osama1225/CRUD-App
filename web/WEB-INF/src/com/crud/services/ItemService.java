@@ -14,4 +14,6 @@ public interface ItemService {
 
 	boolean deleteItemById(int itemId);
 	
+	boolean addOrUpdateItem(ItemModel itemModel);
+	
 }

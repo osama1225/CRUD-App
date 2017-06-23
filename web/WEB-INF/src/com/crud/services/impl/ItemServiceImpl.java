@@ -76,4 +76,16 @@ public class ItemServiceImpl implements ItemService, InitializingBean {
 		return false;
 	}
 
+	@Override
+	public boolean addOrUpdateItem(ItemModel itemModel) {
+		if (itemModel != null){
+			try {
+				return itemDao.insertOrUpdateItem(itemModel);
+			} catch (DataAccessException e) {
+				return false;
+			}
+		}
+		return false;
+	}
+
 }

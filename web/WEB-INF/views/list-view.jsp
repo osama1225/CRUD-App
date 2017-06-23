@@ -31,7 +31,10 @@
 </style>
 </head>
 <body>
+	<input type="hidden" name="updated" value="${updated}"/>
 	<div id = "errorDiv"></div>
+	<div id = "updatedDiv" style="display: none;">Item updated successfully</div>
+	
 	<table class="list_table" cellspacing="0" cellpadding="0">
 		<tr>
 			<th>Image</th>
@@ -46,7 +49,7 @@
 				<td>${item.name}</td>
 				<td>${item.description}</td>
 				<td colspan="2">
-					<button>Edit</button> |
+					<button class="editBtn" data-url="./item/edit/${item.id}">Edit</button> |
 					<button class="deleteBtn" data-id="${item.id}">Delete</button>
 				</td>
 			</tr>

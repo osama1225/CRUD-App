@@ -14,4 +14,5 @@ public interface ItemFacade {
 
 	boolean deleteItem(int itemId);
 	
+	boolean AddOrUpdateItem(ItemDTO itemDTO);
 }
